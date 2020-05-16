@@ -1,2 +1,2 @@
-# pokemon-mechanics
+# Pokemon Mechanics
 Game mechanics for Pokemon Arena
