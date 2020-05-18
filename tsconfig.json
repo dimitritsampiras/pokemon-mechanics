@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["es6", "dom"],
+    "module": "commonjs",
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "types": ["jest"],
+    "typeRoots": ["./types", "./node_modules/@types"],
+    
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
