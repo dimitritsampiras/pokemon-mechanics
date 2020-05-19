@@ -1,13 +1,15 @@
-type StatNameNoHp = "atk" | "def" | "spa" | "spd" | "spe";
-type StatusName = "slp" | "psn" | "brn" | "frz" | "par" | "tox";
+type StatNameNoHp = 'atk' | 'def' | 'spa' | 'spd' | 'spe';
+type StatName = 'hp' & StatNameNoHp;
+type StatusName = 'slp' | 'psn' | 'brn' | 'frz' | 'par' | 'tox';
+type Weather =
+  | 'Sand'
+  | 'Sun'
+  | 'Rain'
+  | 'Hail'
+  | 'Harsh Sunshine'
+  | 'Heavy Rain'
+  | 'Strong Winds';
 
-interface Stats {
-  hp: number;
-  atk: number;
-  def: number;
-  spa: number;
-  spd: number;
-  spe: number;
-}
+type StatsTable<T = number> = {[stat in StatName]: T};
 
-export { StatNameNoHp, StatusName, Stats };
+export { StatNameNoHp, StatusName, StatName, StatsTable };

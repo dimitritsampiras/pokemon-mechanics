@@ -1,4 +1,10 @@
-
+/**
+ * Move data set.
+ * Consists of each move and their respective properties.
+ * @file Natures.ts
+ * @author Dimitri Tsampiras
+ * @since 1.0.0
+ */
 
 import { Move } from '../interfaces/Move';
 

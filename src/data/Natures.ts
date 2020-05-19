@@ -1,6 +1,14 @@
+/**
+ * Nature data set.
+ * Consists of each nature and their effects.
+ * @file Natures.ts
+ * @author Dimitri Tsampiras
+ * @since 1.0.0
+ */
+
 import * as I from '../interfaces/Nature';
 
-export const NATURES: { [name: string]: I.Nature } = {
+export const NATURES: { [nature: string]: I.Nature } = {
   Adamant: ['atk', 'spa'],
   Bashful: ['spa', 'spa'],
   Bold: ['def', 'atk'],

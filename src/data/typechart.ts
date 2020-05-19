@@ -1,12 +1,14 @@
 /**
  * Type chart data set.
  * Consists type strengths and weaknesses.
- * @file typechart.ts
- * @autho Dimitri Tsampiras
+ * @file TypeChart.ts
+ * @author Dimitri Tsampiras
  * @since 1.0.0
  */
 
-export const TypeChart: { [type: string]: { [type: string]: 0 | 0.5 | 2 } } = {
+import { TypeEffectiveness } from "../interfaces/Type";
+
+export const TYPECHART: { [type: string]: { [type: string]: TypeEffectiveness } } = {
   normal: {
     fighting: 0.5,
   },
