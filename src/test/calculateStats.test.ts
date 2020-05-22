@@ -61,3 +61,19 @@ test('New stats off base stats. Case 2', () => {
     spe: 148
   });
 });
+
+test('New stats off base stats. Case 2', () => {
+  const evs: StatsTable = baseEvs;
+  evs['hp'] = 252;
+  evs['def'] = 252;
+  evs['spd'] = 4;
+  const nature: Nature = NATURES['careful'];
+  expect(calculateStats(baseStats, evs, nature)).toEqual({
+    hp: 291,
+    atk: 190,
+    def: 192,
+    spa: 203,
+    spd: 248,
+    spe: 186
+  });
+});
