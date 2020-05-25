@@ -1,3 +1,10 @@
+/**
+ * Test driver for Calculate Stats
+ * @file calculateStats.test.ts
+ * @author Dimitri Tsampiras
+ * @since 1.0.0
+ */
+
 import calculateStats, {
   statHpCalc,
   statNoHpCalc

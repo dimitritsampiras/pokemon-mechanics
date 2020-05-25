@@ -1,6 +1,6 @@
 import { Specie } from '../interfaces/Specie';
 
-export const Roaster: { [specie: string]: Specie } = {
+export const SPECIES: { [specie: string]: Specie } = {
   venusaur: {
     name: 'Venusaur',
     type: ['grass', 'poison'],

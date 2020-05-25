@@ -1,5 +1,11 @@
 import { StatNameNoHp } from './misc';
 
+
+export interface Nature extends Array<StatNameNoHp | undefined> {
+  0: StatNameNoHp | undefined;
+  1: StatNameNoHp | undefined;
+}
+
 export type NatureName =
   | 'adamant'
   | 'bashful'
@@ -26,8 +32,3 @@ export type NatureName =
   | 'sassy'
   | 'serious'
   | 'timid';
-
-export interface Nature extends Array<StatNameNoHp | undefined> {
-  0: StatNameNoHp | undefined;
-  1: StatNameNoHp | undefined;
-}
