@@ -1,12 +1,21 @@
+/**
+ * Species and Pokemon interface and class.
+ * @file Specie.ts
+ * @author Dimitri Tsampiras
+ * @since 1.0.0
+ */
+
 import { StatsTable } from './misc';
 import { Move } from './Move';
-import { Nature, NatureName } from './Nature';
+import { NatureName } from './Nature';
 import { TypeName } from './Type';
-import { Ability, AbilityName } from './Ability';
+import { AbilityName } from './Ability';
 import calculateStats from '../calc/calculateStats';
-import { SPECIES } from '../data/Species';
 import { NATURES } from '../data/Natures';
 
+/**
+ * Species interface.
+ */
 export interface Species {
   readonly name: string;
   readonly type: [TypeName] | [TypeName, TypeName];
@@ -16,6 +25,9 @@ export interface Species {
   readonly weight: number;
 }
 
+/**
+ * Pokemon class.
+ */
 class Pokemon {
   readonly name: string;
   readonly type: [TypeName] | [TypeName, TypeName];
